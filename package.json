@@ -21,15 +21,14 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "clean": "rm -rf public .cache",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1" 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:github": "npm run clean && npm run build && node ./scripts/deploy-github"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tramynn/tramynn.github.io"
   }
+}

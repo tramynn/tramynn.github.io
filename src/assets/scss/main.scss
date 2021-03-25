@@ -43,6 +43,17 @@
 	$size-header-width: 35%;
 	$size-header-pad: 4em;
 
+
+
+// icon
+.icon {
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	margin: 5px;
+}
+
 /* Basic */
 
 	body {
@@ -813,6 +824,7 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		margin: .2em;
 
 		&:hover {
 			border-color: _palette(accent1, bg);
